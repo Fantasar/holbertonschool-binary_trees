@@ -1,10 +1,10 @@
 #include "binary_trees.h"
 
 /**
- * height - Count the difference leaves.
+ * get_depth - Check the left node.
  * @node: Pointer to the parent node
  *
- *Return: size_t count.
+ *Return: depth.
  */
 
 int get_depth(const binary_tree_t *node)
@@ -24,10 +24,11 @@ return (depth);
 }
 
 /**
- * height - Count the difference leaves.
- * @node: Pointer to the parent node
- *
- *Return: size_t count.
+ * check_perfect - Count the difference leaves.
+ * @tree: Pointer to the parent node
+ * @depth: Count depth.
+ * @level: Count level.
+ *Return: result check.
  */
 
 int check_perfect(const binary_tree_t *tree, int depth, int level)
@@ -51,8 +52,8 @@ return(
 }
 
 /**
- * height - Count the difference leaves.
- * @node: Pointer to the parent node
+ * binary_tree_is_perfect - Count the difference leaves.
+ * @tree: Pointer to the parent node
  *
  *Return: size_t count.
  */
